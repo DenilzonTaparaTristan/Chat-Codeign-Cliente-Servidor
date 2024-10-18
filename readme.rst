@@ -1,54 +1,64 @@
 ###################
-What is CodeIgniter
+Chat-Codeign-Cliente-Servidor
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Este repositorio contiene un proyecto de chat en tiempo real desarrollado utilizando PHP, WebSockets y el framework CodeIgniter. El objetivo de esta aplicación es permitir la comunicación bidireccional entre múltiples clientes a través de un servidor WebSocket, implementado con Ratchet.
 
 *******************
-Release Information
+Descripción del Proyecto
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Este proyecto demuestra una arquitectura cliente-servidor básica donde los usuarios pueden conectarse, enviar y recibir mensajes en tiempo real. La aplicación utiliza WebSockets para mantener una conexión persistente entre el servidor y los clientes, permitiendo una comunicación rápida y eficiente sin necesidad de solicitudes HTTP repetidas.
 
 **************************
-Changelog and New Features
+Características:
 **************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- Servidor WebSocket: Implementado con Ratchet en PHP.
+- Comunicación en tiempo real: Los mensajes se propagan instantáneamente entre todos los clientes conectados.
+- Interfaz gráfica sencilla: Desarrollada en HTML, CSS y JavaScript, para facilitar el uso del chat.
+- Integración con CodeIgniter: La arquitectura cliente-servidor está integrada con el framework para mejorar la organización y escalabilidad del proyecto.
 
 *******************
-Server Requirements
+Requisitos Previos
 *******************
 
-PHP version 5.6 or newer is recommended.
+Para poder ejecutar esta aplicación de chat en tu entorno local, necesitarás los siguientes componentes:
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+- PHP 7.x o superior
+- XAMPP o WAMP para montar el entorno de desarrollo.
+- Composer para la gestión de dependencias (instalar Ratchet).
+- Framework CodeIgniter (versión 3 o superior).
+- Ratchet: Librería PHP para manejar WebSockets.
 
 ************
-Installation
+Estructura del Proyecto
 ************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+- application/controllers/Chat.php: Controlador principal que carga la vista del chat.
+- application/views/chat_view.php: Vista que contiene la interfaz del chat.
+- application/controllers/ChatServer.php: Implementación del servidor WebSocket utilizando Ratchet.
+- runChatServer.php: Script que inicia el servidor WebSocket.
 
 *******
-License
+Uso
 *******
+1. Accede al cliente de chat en tu navegador a través de la URL especificada en la configuración de CodeIgniter.
+2. Abre múltiples pestañas o diferentes navegadores para probar la comunicación entre clientes.
+3. Escribe un mensaje en el campo de texto y haz clic en "Enviar" o presiona "Enter" para que el mensaje sea enviado.
+4. Verás cómo los mensajes enviados son recibidos por todos los clientes conectados en tiempo real.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+*******
+Tecnologías Utilizadas
+*******
+- PHP: Lenguaje de programación del lado del servidor.
+- Ratchet: Librería de PHP para WebSockets.
+- CodeIgniter: Framework PHP para organizar la aplicación.
+- HTML5, CSS3, JavaScript: Para la construcción de la interfaz gráfica del chat.
 
+*******
+Chat
+*******
+Captura de pantalla 2024-10-15 200607.png
 *********
 Resources
 *********
