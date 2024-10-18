@@ -55,10 +55,7 @@ Tecnologías Utilizadas
 - CodeIgniter: Framework PHP para organizar la aplicación.
 - HTML5, CSS3, JavaScript: Para la construcción de la interfaz gráfica del chat.
 
-*******
-Chat
-*******
-C:\xampp8\htdocs\CODEIGN\Captura de pantalla 2024-10-15 200607.png
+
 *********
 Resources
 *********
