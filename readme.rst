@@ -58,7 +58,7 @@ Tecnologías Utilizadas
 *******
 Chat
 *******
-Captura de pantalla 2024-10-15 200607.png
+C:\xampp8\htdocs\CODEIGN\Captura de pantalla 2024-10-15 200607.png
 *********
 Resources
 *********
